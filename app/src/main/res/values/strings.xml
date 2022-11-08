@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">kryptoApp</string>
+    <string name="lisays_teksti">Lisää uusi suosikki krypto</string>
+    <string name="fetchButtonText">Lisää suosikkeihin</string>
+    <string name="hintaOtsikko">Hinta</string>
+    <string name="nimiOtsikko">Krypto</string>
+    <string name="muutosOtsikko">Muutos</string>
+    <string name="backToMainText">Takaisin</string>
+    <string name="changePageText">Lisää kryptoja listalle</string>
+    <string name="krypto">Kirjoita tähän</string>
+    <string name="cryptoListText">Krypto lista</string>
+    <string name="updateNumbersText">Lista päivitetty</string>
+    <string name="noCryptosText">Lista on tyhjä</string>
+    <string name="internetErrorText">Ei nettiyhteyttä</string>
+    <string name="invalidInputText">Kyseistä kryptoa ei löydy</string>
+    <string name="newCryptoText">lisätty suosikkeihin</string>
+</resources>

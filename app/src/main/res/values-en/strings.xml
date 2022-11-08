@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kryptoApp</string>
+    <string name="lisays_teksti">Add new favourite crypto</string>
+    <string name="krypto">Write here</string>
+    <string name="fetchButtonText">Add to favourites</string>
+    <string name="hintaOtsikko">Price</string>
+    <string name="nimiOtsikko">Crypto</string>
+    <string name="muutosOtsikko">Change</string>
+    <string name="backToMainText">Back</string>
+    <string name="changePageText">Add cryptos to the list</string>
+    <string name="cryptoListText">Crypto list</string>
+    <string name="updateNumbersText">List updated</string>
+    <string name="noCryptosText">List is empty</string>
+    <string name="internetErrorText">No internet connection</string>
+    <string name="invalidInputText">Crypto not found</string>
+    <string name="newCryptoText">added to crypto list</string>
+
+
+</resources>

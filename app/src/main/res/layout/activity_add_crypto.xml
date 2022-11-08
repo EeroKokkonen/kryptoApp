@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addCryptoActivity"
+    android:background="@color/bg_gray">
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/backToMainButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/box_gray"
+        android:padding="20dp"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            >
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="0dp"
+                android:fontFamily="serif"
+                android:text="@string/lisays_teksti"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:layout_weight="0.1"
+                />
+
+            <EditText
+                android:id="@+id/cryptoInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Kirjoita tähän"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_hint_color"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+
+                />
+
+            <Button
+                android:id="@+id/fetchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fetchButtonText"
+                android:onClick="fetchCryptoData"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yleisimpiä kryptoja"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:layout_weight="0.1"
+            android:textColor="@color/white"
+            android:fontFamily="serif">
+
+        </TextView>
+        <ListView
+            android:id="@+id/commonCryptoList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/backToMainButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputContainer"
+        android:text="@string/backToMainText"
+        android:onClick="backToMenu"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
